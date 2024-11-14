@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TableDetails">
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:elevation="8dp"
+        app:cardBackgroundColor="@color/primary_color"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tableCount"
+            android:textColor="@color/white"
+            android:gravity="start"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="20dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/multiply"
+        android:text="Start Multiply"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="100dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/division"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/division"
+        android:text="Start Division"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="100dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
